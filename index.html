@@ -1,0 +1,157 @@
+<!doctype html>
+<html>
+
+<head>
+    <title>MyProfile</title>
+</head>
+
+
+<body>
+    </div>
+    <div class="blacktab">
+        <p id="แรก">Main-menu</p>
+    </div>
+    <div class="background-image">
+        <div class="text">
+            <span style="font-family: Mitr, sans-serif;">
+                <span1 style="color: rgb(0, 0, 0);">Let me introduce</span1>
+                <span2 style="color: rgb(255, 196, 108);">Myself</span2>
+                <p>เว็บนี้สร้างขึ้นมาเพื่อแนะนำและอธิบายเกี่ยวกับตัวผมเองครับ
+                    รวมไปถึงผลงานและกิจกรรมต่างๆที่เคยได้เข้าร่วมครับ</p>
+                <div>
+                    <button type="button" onclick="l2()"><span></span>ประวัติส่วนตัว</button>
+                    <button type="button" onclick="l3()"><span></span>ผลงานและกิจกรรม</button>
+                </div>
+        </div>
+
+
+</body>
+<style>
+    * {
+        margin: 0px;
+        padding: 1;
+    }
+
+    .background-image {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.60), rgba(0, 0, 0, 0.60)), url(https://images.unsplash.com/photo-1528164344705-47542687000d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxleHBsb3JlLWZlZWR8M3x8fGVufDB8fHx8fA%3D%3D&w=1000&q=80);
+        width: 100vw;
+        height: 100vh;
+        position: relative;
+        background-size: cover;
+
+
+    }
+
+    .text {
+        position: absolute;
+        top: 30%;
+        width: 100%;
+        transform: translateY(-50%);
+        text-align: center;
+    }
+
+    .text {
+        font-size: 50px;
+        margin-top: 80px;
+    }
+
+    .text p {
+        margin: 1px auto;
+        font-weight: 100;
+        line-height: 25px;
+        color: rgb(0, 0, 0);
+        font-size: 20px;
+    }
+
+    button {
+        width: 200px;
+        padding: 15px 0;
+        text-align: center;
+        margin: 20px 10px;
+        border-radius: 25px;
+        font-weight: bold;
+        border: 2px solid #ddb057;
+        background: transparent;
+        color: #fff;
+        cursor: pointer;
+        position: relative;
+        left: 5px;
+    }
+
+    span {
+        background: #ddb057;
+        height: 100%;
+        width: 100%;
+        border-radius: 25px;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        z-index: -1;
+        transition: 0.5s;
+    }
+
+    button:hover span {
+        width: 100%;
+    }
+
+    button:hover {
+        border: none;
+    }
+
+    img {
+        border-radius: 60px;
+        width: 450px;
+        height: 450px;
+    }
+
+
+
+    .blacktab {
+        border: 5px outset rgb(0, 0, 0);
+        background-color: rgb(0, 0, 0);
+        text-align: center;
+        width: 100%;
+        height: 80px;
+        position: fixed;
+        color: rgb(255, 255, 255);
+        left: 0%;
+        top: 0%;
+        opacity: 0.85;
+        z-index: 4;
+        transition: opacity 0.5s;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+    }
+
+    #แรก {
+        position: absolute;
+        left: 40px;
+        top: 27px;
+        font-size: 25px;
+        transition: all 0.4s;
+        font-family: sans-serif;
+    }
+
+
+    #สอง:hover {
+        cursor: pointer;
+        text-shadow: 0 0 10px rgb(255, 255, 255);
+    }
+</style>
+<script>
+    function l1() {
+        location.href = ("testweb.html")
+    }
+    function l2() {
+        location.href = ("ct.html")
+    }
+    function l3() {
+        location.href = ("tw.html")
+    }
+    function l4() {
+        location.href = ("หน้าติดต่อ.html")
+    }
+
+</script>
+
+</html>
